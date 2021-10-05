@@ -119,6 +119,10 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list .current .link {
@@ -156,6 +160,10 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color-secondary);
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-header .envelope,
@@ -359,6 +367,10 @@ img {
   justify-content: center;
   border-radius: 50%;
   fill: var(--icons-color);
+
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-list .item:last-child {
@@ -403,6 +415,10 @@ img {
   border-radius: 4px;
   align-items: center;
   justify-content: center;
+
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-clients .link:hover,
@@ -444,6 +460,10 @@ img {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link-footer:hover,
@@ -480,6 +500,10 @@ img {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   fill: var(--text-color-third);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links-list .item:last-child {
@@ -558,11 +582,15 @@ img {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  background: var(--bg-color-secnd);
+  background-color: var(--bg-color-secnd);
   color: var(--text-color-basic);
   border-radius: 4px;
   border-width: 0px;
   cursor: pointer;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -585,6 +613,10 @@ img {
   margin-right: 30px;
   border: 1px solid #eeeeee;
   flex-basis: calc(100% / 3 - 30px);
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects .card-set .item:focus,
