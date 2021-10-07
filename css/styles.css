@@ -517,7 +517,7 @@ img {
 
 /* --------------------MODAL WINDOW -------------------- */
 
-.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -529,6 +529,9 @@ img {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -558,6 +561,8 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--bg-color-frst);
+
+  fill: #000;
 }
 
 .btn-close:hover {
@@ -624,6 +629,7 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .card-thumb {
   position: relative;
   overflow: hidden;
@@ -641,14 +647,14 @@ img {
   line-height: 1.55;
   letter-spacing: 0.03em;
   background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(294px);
+  transform: translateY(100%);
 
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects .card-set .item:focus .card-overlay,
+.projects .card-set .card-set-link:focus .card-overlay,
 .projects .card-set .item:hover .card-overlay {
   transform: translateY(0%);
 }
